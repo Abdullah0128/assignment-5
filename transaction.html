@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> -->
+    <!-- transaction history -->
+    <!-- <div id="history-container" class="mt-8"> -->
+        <!-- Transaction history cards will be inserted here -->
+    <!-- </div>
+
+    <script src="js/transaction.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add any custom CSS here */
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="container mx-auto">
+        <!-- Main Donation Section -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-2xl font-bold mb-4">Donation Page</h1>
+
+            <!-- Donation Form -->
+            <div class="mb-6">
+                
+                <!-- <input id="input" type="number" placeholder="Enter amount" class="w-full border border-gray-300 rounded-lg p-2 mb-4" />
+                <button id="donate-nk" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">
+                    Donate to Noakhali
+                </button>
+            </div> -->
+
+            <!-- Current Donation Balance -->
+            <!-- <div id="balance-display" class="text-xl font-bold mt-6 mb-6">
+                Total Donation Balance: <span id="balance">0</span> BDT
+            </div> -->
+
+            <!-- Transaction History -->
+            <div id="history-container" class="mt-8">
+                <!-- Transaction history cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Donation balance
+        // let currentBalance = 0;
+        // let transactionHistory = [];
+
+        // // Function to update the displayed balance
+        // function updateBalance(amount) {
+        //     currentBalance += amount;
+        //     document.getElementById('balance').textContent = currentBalance;
+        // }
+
+        // // Function to add transaction to history
+        // function addTransaction(amount, purpose) {
+        //     const transaction = {
+        //         amount: amount,
+        //         purpose: purpose,
+        //         date: new Date().toLocaleString() // Date and Time
+        //     };
+
+        //     transactionHistory.push(transaction);
+        //     updateHistoryDisplay();
+        // }
+
+        // // Function to update the transaction history display
+        // function updateHistoryDisplay() {
+        //     const historyContainer = document.getElementById('history-container');
+        //     historyContainer.innerHTML = ''; // Clear existing history
+
+        //     transactionHistory.forEach((transaction) => {
+        //         const historyCard = document.createElement('div');
+        //         historyCard.classList.add('border', 'rounded-lg', 'p-4', 'mb-4', 'bg-white', 'shadow-md');
+
+        //         historyCard.innerHTML = `
+        //             <p><strong>${transaction.amount} BDT</strong> is donated for ${transaction.purpose}</p>
+        //             <p class="text-xs text-gray-500">Date: ${transaction.date}</p>
+        //         `;
+
+        //         historyContainer.appendChild(historyCard);
+        //     });
+        // }
+
+        // // Example of capturing donation and adding it to history
+        // document.getElementById('donate-nk').addEventListener('click', function(event) {
+        //     event.preventDefault();
+        //     const donationAmount = parseInt(document.getElementById('input').value);
+        //     if (donationAmount > 0) {
+        //         updateBalance(donationAmount); // Update total donation balance
+        //         addTransaction(donationAmount, 'Flood Relief in Noakhali, Bangladesh'); // Add to transaction history
+        //     } else {
+        //         alert('Please enter a valid donation amount.');
+        //     }
+        // });
+    </script>
+    
+    
+</body>
+</html>

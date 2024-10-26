@@ -20,6 +20,14 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
     document.getElementById('donate-amount').innerText=new_bal;
     const present_amount=main_bal-don_bal;
     document.getElementById('main-amount').innerText=present_amount;
+    // transaction history
+    const div=document.createElement('div');
+    div.classList.add('shadow-md');
+    div.innerHTML=`
+    <p class="text-2xl  text-center p-5 rounded-md">${don_bal}Taka is Donated for Famine-2024 at Feni,Bangladesh</p>
+    
+    `
+    document.getElementById('transaction-container').appendChild(div);
      
     }
     else{
@@ -36,6 +44,14 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
         document.getElementById('donate-amount2').innerText=new_bal2;
         const present_amount2=main_bal2-don_bal2;
         document.getElementById('main-amount').innerText=present_amount2;
+        // transaction history
+        const div=document.createElement('div');
+        div.classList.add('shadow-md');
+        div.innerHTML=`
+        <p class="text-2xl  text-center p-5 rounded-md">${don_bal2}Taka is Donated for Flood relief in Feni,Bangladesh</p>
+        
+        `
+        document.getElementById('transaction-container').appendChild(div);
          
         }
         else{
@@ -53,6 +69,14 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
             document.getElementById('donate-amount3').innerText=new_bal3;
             const present_amount3=main_bal3-don_bal3;
             document.getElementById('main-amount').innerText=present_amount3;
+            // transaction history
+            const div=document.createElement('div');
+            div.classList.add('shadow-md');
+            div.innerHTML=`
+            <p class="text-2xl  text-center p-5 rounded-md">${don_bal3}Taka is Donated for Aid for Injured for Quota Movement,Bangladesh</p>
+            
+            `
+            document.getElementById('transaction-container').appendChild(div);
              
             }
             else{
@@ -74,7 +98,22 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
                 event.preventDefault();
                 showhiddenfile();  
             });
+            // popup
             document.getElementById('success-msg').addEventListener('click', function(event) {
                 event.preventDefault();
                 hidePopup(); 
             });
+
+            //transaction history
+            document.getElementById('show-transaction-history').addEventListener('click',function(event){
+               event.preventDefault();
+               console.log("History button clicked");
+                transactionfile();
+            });
+            document.getElementById('donate-button').addEventListener('click',function(event){
+                event.preventDefault();
+                donatefile();
+             });
+
+
+            
