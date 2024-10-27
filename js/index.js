@@ -21,10 +21,13 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
     const present_amount=main_bal-don_bal;
     document.getElementById('main-amount').innerText=present_amount;
     // transaction history
+    const date=new Date().toLocaleString()
     const div=document.createElement('div');
     div.classList.add('shadow-md');
     div.innerHTML=`
-    <p class="text-2xl  text-center p-5 rounded-md">${don_bal}Taka is Donated for Famine-2024 at Feni,Bangladesh</p>
+    <p class="text-2xl  text-center p-5 rounded-md">${don_bal}Taka is Donated for Famine-2024 at Feni,Bangladesh<br>
+    date:${date}
+    </p>
     
     `
     document.getElementById('transaction-container').appendChild(div);
@@ -45,10 +48,13 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
         const present_amount2=main_bal2-don_bal2;
         document.getElementById('main-amount').innerText=present_amount2;
         // transaction history
+        const date=new Date().toLocaleString()
         const div=document.createElement('div');
         div.classList.add('shadow-md');
         div.innerHTML=`
-        <p class="text-2xl  text-center p-5 rounded-md">${don_bal2}Taka is Donated for Flood relief in Feni,Bangladesh</p>
+        <p class="text-2xl  text-center p-5 rounded-md">${don_bal2}Taka is Donated for Flood relief in Feni,Bangladesh<br>
+        date:${date}
+        </p>
         
         `
         document.getElementById('transaction-container').appendChild(div);
@@ -70,10 +76,13 @@ document.getElementById('donate-nk').addEventListener('click',function(event){
             const present_amount3=main_bal3-don_bal3;
             document.getElementById('main-amount').innerText=present_amount3;
             // transaction history
+            const date=new Date().toLocaleString()
             const div=document.createElement('div');
             div.classList.add('shadow-md');
             div.innerHTML=`
-            <p class="text-2xl  text-center p-5 rounded-md">${don_bal3}Taka is Donated for Aid for Injured for Quota Movement,Bangladesh</p>
+            <p class="text-2xl  text-center p-5 rounded-md">${don_bal3}Taka is Donated for Aid for Injured for Quota Movement,Bangladesh<br>
+            date:${date}
+            </p>
             
             `
             document.getElementById('transaction-container').appendChild(div);
