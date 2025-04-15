@@ -1,4 +1,5 @@
 🐾 Pet Adoption Website
+
 A responsive and modern Pet Adoption Website built with **HTML**, **JavaScript**, **Tailwind CSS**, and **DaisyUI**. 
 This project showcases adoptable pets with dynamic cards and modals loaded from a API.
 
